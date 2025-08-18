@@ -1,0 +1,4 @@
+Line 1: Hello, World!
+Line 2: Welcome to Week 1 of the AI Bootcamp.
+Line 3: Today, we will learn about file handling in Python.
+Line 4: Let's get started!
