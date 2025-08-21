@@ -24,7 +24,21 @@ def array_operation(sales_data):
     total_sales = np.sum(sales_data)
     total_percentage = (sales_data / total_sales) * 100
 
-    for perc in total_percentage:
-        print(f'total percentage - {perc}')
+    for i, pct in enumerate(total_percentage):
+        print(f"Sales percentage  Day {i+1}: {pct:.1f}%")
 
     withBonus = 500
+    sales_with_bonus = withBonus + sales_data
+    print(f"With bonus: {sales_with_bonus}")
+
+    commission_rate = 0.05 #5% commission
+    sales_commission = commission_rate * sales_data
+    print(f'commission earned  -  {sales_commission}')
+
+def main():
+    sales_data = create_simple_sales()
+    basic_calculations(sales_data)
+    array_operation(sales_data)
+
+if (__name__ == '__main__'):
+    main()
